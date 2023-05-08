@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #ddd;
+    overflow-x:hidden ;
+    cursor: default;
+}
+
+.x{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #00f;
+    padding: 5px;
+}
+.x img{
+    width: 11vh;
+    height: 11vh;
+    position: absolute;
+    background-color: #00f;
+    top: 0;
+    left: 1457px;
+}
+.x h1{
+    font-size: 1.5rem;
+}
+
+.a{
+    border: 1px solid #000;
+    width: 100vw;
+    height: auto;
+    background-color: #ccc;
+    padding: 3px;
+}
+.a ul{
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.a ul li{
+    font-size: 1rem;
+}
+.a ul li img{
+    width: 1.5rem;
+}
+
+.b{
+    border: 1px solid #000;
+    width: 94vw;
+    background-color: #ccc;
+    margin: 0px 0px 0px 3rem;
+}
+
+.c{
+    width: 94vw;
+    margin: 0px 0px 0px 3rem;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #bbb;
+    display: flex;
+    flex-wrap:wrap;
+}
+.c h2{
+    background-color: #eee;
+    border: 1px solid #000;
+    width: 94vw;
+    position: relative;
+    top: -12px;
+    left: -11px;
+}
+.c select{
+    margin:0px 6rem 0px 1rem;
+    padding: 0px 5rem 0px 0px;
+}
+
+.d{
+    width: 94vw;
+    margin: 0px 0px 0px 3rem;
+    padding-left:1rem ;
+    padding-top: 1rem;
+    border: 1px solid #000;
+    background-color: #bbb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.d h2{
+    border: 1px solid #000;
+    width: 94vw;
+    background-color: #eee;
+    position: relative;
+    left: -17px;
+    top: -17px;
+}
+#caminho{
+    width: 80vw;
+    margin-bottom: 1rem;
+    margin-left:1rem;
+}
+#natureza{
+    width: 50vw;
+    margin-bottom: 1rem;
+}
+#vencimento{
+    width: 25vw; 
+    margin-bottom: 3rem;
+}
+.e{
+    width: 94vw;
+    margin: 0px 0px 0px 3rem;
+    padding: 0.8rem;
+    border: 1px solid #000;
+    background-color: #bbb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.e h2{
+    border: 1px solid #000;
+    width: 94vw;
+    background-color: #eee;
+    position: relative;
+    top:-14px;
+    left: -14px;
+}
+#titulo{
+    width: 80vw;
+}
+#descricao{
+    width: 100vw;
+    display: block;
+}
+textarea{
+    margin: 0px 0px 0px 6rem;
+}
+
+.f{
+    width: 100vw;
+    border: 1px solid #000;
+    background-color: #eee;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    padding:1px ;
+}
+.f button{
+    margin: 0.1rem;
+    padding:6px 10px ;
+}
+.f button img{
+    width: 12px;
+}
