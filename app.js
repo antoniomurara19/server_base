@@ -44,6 +44,19 @@ a.addEventListener('click',(e)=>{
       
       console.log(hora_random(90));
 
+      if(cliente_texto === 'ATENDIMENTO'){
+        cliente_texto = ''
+      }
+      if(produto_texto === 'MANUTENÇÃO DE UNIDADES'){
+        produto_texto = ''
+      }
+      if(modulo_texto === 'SERVIÇOS'){
+        modulo_texto = ''
+      }
+      if(natureza_texto === 'Natureza da Manutenção'){
+        natureza_texto = ''
+      }
+
     const ti = document.getElementById('ti')
     const cc = document.getElementById('cc')
     const ss = document.getElementById('ss')
@@ -59,10 +72,12 @@ a.addEventListener('click',(e)=>{
       tipo.innerHTML = natureza_texto
 
       
-    let i = 1
-    let cod = document.getElementById('cod')
-    cod.innerHTML = i
-    i++
+    // // let i = 1
+    // let cod = document.getElementById('cod')
+    // cod.innerHTML = i
+    // i++
+
+    
 
     hora_random();
 })
