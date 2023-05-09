@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js"defer></script>
+    <link rel="shortcut icon" href="./senai.png" type="image/x-icon">
     <title>HelpDesk</title>
 </head>
 <body>
     <div class="x">
-        <h1>Central de Serviços</h1>
-        <img src="/perfil.png" alt="Perfil do usuário">
+        <h1><a href="./index.html">Central de Serviços</a></h1>
+        <img class="perfil" src="/perfil.png" alt="Perfil do usuário">
     </div>
     <div class="a">
         <ul>
-            <li>Principal</li>
-            <li><img src="/base-de-conhecimento.png" alt=""> Base de Conhecimento</li>
-            <li><img src="/conferencia.png" alt=""> Novo Chamado</li>
-            <li><img src="/lista-telefonica.png" alt=""> Lista de Chamados</li>
+            <li><a href="./index.html">Principal</a></li>
+            <li><img src="/base-de-conhecimento.png" alt=""><a href="./base.html">Base de Conhecimento</a></li>
+            <li><img src="/lista-telefonica.png" alt=""><a href="./lista.html"> Lista de Chamados</a></li>
         </ul>
     </div>
     <div class="b">
-        <h2>Chamado: 2719949</h2>
+        <h2>Chamado: <span id="cod">1</span></h2>
     </div>
     <div class="c">
         <h2>Produto/Processo/Módulo</h2>
         <label for="produto">Produto: </label>
+
         <select name="" id="produto">
-            <option selected>
+            <option>
                 MANUTENÇÃO DE UNIDADES
             </option>
             <option>
@@ -41,8 +43,8 @@
                 SNAKE GAME
             </option>
         </select>
-        <label for="processo">Processo: </label>
-        <select name="" id="processo">
+        <label for="processo">Cliente: </label>
+        <select name="" id="cliente">
             <option>
                 ATENDIMENTO
             </option>
@@ -105,6 +107,9 @@
         <div>
             <label for="natureza">Natureza: </label>
             <select name="" id="natureza">
+                <option selected>
+                    Natureza da Manutenção
+                </option>
                 <option>
                     Evolutiva
                 </option>
@@ -132,12 +137,34 @@
         </div>
         <div>
             <label id="descricao">Descrição: </label>
-            <textarea rows="10" cols="190"></textarea>
+            <textarea rows="10" cols="160"></textarea>
         </div>
     </div>
+    <br><br>
+    <main>
+        <table>
+            <tr>
+                <td class="ab">Título</td>
+                <td class="ab">Cliente</td>
+                <td class="ab">Sistema</td>
+                <td class="ab">Módulo</td>
+                <td class="ab">Tempo de Manutenção</td>
+                <td class="ab">Tipo da Manutenção</td>
+            </tr>
+            <tr>
+                <td id="ti"></td>
+                <td id="cc"></td>
+                <td id="ss"></td>
+                <td id="mm"></td>
+                <td id="tempo"></td>
+                <td id="tipo"></td>
+            </tr>
+        </table>
+    </main>
+    <br><br><br><br>
     <div class="f">
-        <button><img src="/correto.png" alt=""> Confirmar</button>
-        <button><img src="/errado.png" alt=""> Cancelar</button>
+        <button id="a"><img src="/correto.png" alt="Confirmar"><a href="./lista.html"> Confirmar</a></button>
+        <button><img src="/errado.png" alt="Cancelar"> Cancelar</button>
     </div>
 </body>
 </html>
